@@ -8,6 +8,16 @@ import { BrowserRouter, Route } from 'react-router-dom'
 const Layout = () => {
     return (
         <BrowserRouter>
+            <Route render={(props) => (
+                <div className='layout'>
+                    <Sidebar {...props} />
+                    <div className="layout__content">
+                        <div className="layout__content-main">
+                            <Routes></Routes>
+                        </div>
+                    </div>
+                </div>
+            )}/>
         </BrowserRouter>
     )
 }
