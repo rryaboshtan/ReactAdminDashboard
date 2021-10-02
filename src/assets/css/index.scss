@@ -64,7 +64,7 @@ a:hover {
 }
 
 button {
-    cursor: default;
+    cursor: pointer;
     border: 0;
     outline: 0;
     color: var(--txt-color);
@@ -83,71 +83,71 @@ input:focus {
     border: 2px solid var(--main-color);
 }
 
-.page-header {
-    margin-bottom: 40px;
-    text-transform: capitalize;
-}
+// .page-header {
+//     margin-bottom: 40px;
+//     text-transform: capitalize;
+// }
 
-.card {
-    padding: 30px;
-    margin-bottom: 30px;
-    background-color: var(--main-bg);
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-}
+// .card {
+//     padding: 30px;
+//     margin-bottom: 30px;
+//     background-color: var(--main-bg);
+//     box-shadow: var(--box-shadow);
+//     border-radius: var(--border-radius);
+// }
 
-.full-height {
-    height: 100%;
-}
+// .full-height {
+//     height: 100%;
+// }
 
-.card.full-height {
-    height: calc(100% - 30px);
-}
+// .card.full-height {
+//     height: calc(100% - 30px);
+// }
 
-.card__header {
-    text-transform: capitalize;
-}
+// .card__header {
+//     text-transform: capitalize;
+// }
 
-.card > div ~ div {
-    margin-top: 30px;
-}
+// .card > div ~ div {
+//     margin-top: 30px;
+// }
 
-.card__footer {
-    text-align: center;
-    text-transform: capitalize;
-}
+// .card__footer {
+//     text-align: center;
+//     text-transform: capitalize;
+// }
 
-.light-background {
-    background-color: var(--main-bg-light);
-    color: #000;
-}
+// .light-background {
+//     background-color: var(--main-bg-light);
+//     color: #000;
+// }
 
-.dark-background {
-    background-color: var(--main-bg-dark);
-    color: #fff;
-}
+// .dark-background {
+//     background-color: var(--main-bg-dark);
+//     color: #fff;
+// }
 
-.blue-color {
-    background-color: var(--main-color-blue);
-    color: #fff;
-}
+// .blue-color {
+//     background-color: var(--main-color-blue);
+//     color: #fff;
+// }
 
-.red-color {
-    background-color: var(--main-color-red);
-    color: #fff;
-}
+// .red-color {
+//     background-color: var(--main-color-red);
+//     color: #fff;
+// }
 
-.cyan-color {
-    background-color: var(--main-color-cyan);
-    color: #fff;
-}
+// .cyan-color {
+//     background-color: var(--main-color-cyan);
+//     color: #fff;
+// }
 
-.green-color {
-    background-color: var(--main-color-green);
-    color: #fff;
-}
+// .green-color {
+//     background-color: var(--main-color-green);
+//     color: #fff;
+// }
 
-.orange-color {
-    background-color: var(--main-color-orange);
-    color: #fff;
-}
+// .orange-color {
+//     background-color: var(--main-color-orange);
+//     color: #fff;
+// }
