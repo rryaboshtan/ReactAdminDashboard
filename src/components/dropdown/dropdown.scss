@@ -41,11 +41,12 @@
         overflow: hidden;
         transform-origin: top right;
         transform: scale(0);
-        transition: transform .3s ease;
+        transition: transform 0.3s ease;
 
         &.active {
+            background-color: transparent;
             transform: scale(1);
-            transition: transform .5s var(--transition-cubic);
+            transition: transform 0.5s var(--transition-cubic);
         }
     }
 

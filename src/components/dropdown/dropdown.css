@@ -55,14 +55,15 @@
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  -o-transition: transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .dropdown__content.active {
+  background-color: transparent;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
