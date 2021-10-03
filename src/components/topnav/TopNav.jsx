@@ -21,16 +21,14 @@ const renderNotificationItem = (item, index) => (
       <i className={item.icon}></i>
       <span>{item.content}</span>
    </div>
-);    
+);
 
-const renderUserToggle = (user) => (
+const renderUserToggle = () => (
    <div className='topnav__right-user'>
       <div className='topnav__right-user__image'>
-         <img src="{user.image" alt="" />
+         <img src={currentUser.image} alt='' />
       </div>
-      <div className="topnav__right-user__name">
-         {user.displayName}
-      </div>
+      <div className='topnav__right-user__name'>{currentUser.displayName}</div>
    </div>
 );
 
@@ -45,7 +43,9 @@ const Topnav = () => {
          </div>
          <div className='topnav__right'>
             <div className='topnav__right-item'>
-               <Dropdown icon='bx bx-user'></Dropdown>
+               <Dropdown
+                  customToggle={renderUserToggle}
+               ></Dropdown>
             </div>
             <div className='topnav__right-item'>
                <Dropdown

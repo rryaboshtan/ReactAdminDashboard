@@ -75,3 +75,24 @@
   margin-right: 20px;
   font-size: 1.5rem;
 }
+
+.topnav__right-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topnav__right-user__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.topnav__right-user__image > img {
+  width: 100%;
+}
