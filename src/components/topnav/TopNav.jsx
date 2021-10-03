@@ -32,7 +32,7 @@ const renderUserToggle = () => (
    </div>
 );
 
-const renderUserMenu = (item) => (
+const renderUserMenu = item => (
    <Link to='/' key={uuidv4()}>
       <div className='notification-item '>
          <i className={item.icon}></i>
@@ -56,7 +56,7 @@ const Topnav = () => {
                   originClass={'origin-top'}
                   customToggle={renderUserToggle}
                   contentData={userMenu}
-                  renderItems = {renderUserMenu}
+                  renderItems={renderUserMenu}
                ></Dropdown>
             </div>
             <div className='topnav__right-item'>

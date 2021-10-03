@@ -12,7 +12,7 @@ const Layout = () => {
    return (
       <BrowserRouter>
          <Route
-            render={(props) => (
+            render={props => (
                <div className='layout'>
                   <Sidebar {...props} />
                   <div className='layout__content'>

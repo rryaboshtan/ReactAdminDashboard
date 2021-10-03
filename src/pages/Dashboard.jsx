@@ -120,13 +120,9 @@ const orderStatus = {
    refund: 'danger',
 };
 
-const renderOrderHead = item => (
-   <th key={uuidv4()}>
-      {item}
-   </th> 
-)
+const renderOrderHead = item => <th key={uuidv4()}>{item}</th>;
 
-const renderOrderBody = (item) => (
+const renderOrderBody = item => (
    <tr>
       <td>{item.id}</td>
       <td>{item.user}</td>
@@ -138,9 +134,9 @@ const renderOrderBody = (item) => (
    </tr>
 );
 
-const renderCustomerHead = (item) => <th key={uuidv4()}>{item}</th>;
+const renderCustomerHead = item => <th key={uuidv4()}>{item}</th>;
 
-const renderCustomerBody = (item) => (
+const renderCustomerBody = item => (
    <tr key={uuidv4()}>
       <td>{item.username}</td>
       <td>{item.order}</td>
@@ -155,7 +151,7 @@ const Dashboard = () => {
          <div className='row'>
             <div className='col-6'>
                <div className='row'>
-                  {statusCards.map((item) => (
+                  {statusCards.map(item => (
                      <div className='col-6'>
                         {item.title}
                         <StatusCard icon={item.icon} count={item.count} title={item.title} />

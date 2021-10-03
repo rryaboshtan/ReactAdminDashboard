@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 //    console.log(icon);
 // }
 
-const SidebarItem = (props) => {
+const SidebarItem = props => {
    const active = props.active ? 'active' : '';
 
    return (
@@ -25,8 +25,8 @@ const SidebarItem = (props) => {
    );
 };
 
-const Sidebar = (props) => {
-   const activeItem = sidebar_items.findIndex((item) => item.route === props.location.pathname);
+const Sidebar = props => {
+   const activeItem = sidebar_items.findIndex(item => item.route === props.location.pathname);
 
    return (
       <div className='sidebar'>
