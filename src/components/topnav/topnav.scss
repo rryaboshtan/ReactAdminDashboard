@@ -31,4 +31,13 @@
             right: 20px;
         }
     }
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        &-item ~ .topnav__right-item {
+            margin-left: 30px;
+        }
+    }
 }
