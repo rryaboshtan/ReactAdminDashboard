@@ -13,8 +13,70 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
   margin-bottom: 30px;
+}
+
+.status-card::before {
+  content: "";
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(var(--main-color)), to(var(--second-color)));
+  background-image: -webkit-linear-gradient(bottom left, var(--main-color), var(--second-color));
+  background-image: -o-linear-gradient(bottom left, var(--main-color), var(--second-color));
+  background-image: linear-gradient(to top right, var(--main-color), var(--second-color));
+  position: absolute;
+  left: -50%;
+  top: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  -o-transition: transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.status-card:hover {
+  color: var(--txt-white);
+}
+
+.status-card:hover::before {
+  -webkit-transform: scale(3);
+      -ms-transform: scale(3);
+          transform: scale(3);
+}
+
+.status-card__icon {
+  width: 30%;
+  height: 100%;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.status-card__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+.status-card__info > h4 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
