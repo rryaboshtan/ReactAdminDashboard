@@ -21,3 +21,8 @@
   text-transform: capitalize;
   padding: 15px 10px;
 }
+
+.table-wrapper table tbody > tr:hover {
+  background-color: var(--main-color);
+  color: var(--txt-white);
+}
