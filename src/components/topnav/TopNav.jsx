@@ -8,14 +8,33 @@ import Dropdown from '../dropdown/Dropdown';
 
 import notifications from '../../assets/JsonData/notification.json';
 
+import userImage from '../../assets/images/MyPhoto.png';
+import userMenu from '../../assets/JsonData/user_menus.json';
+
+const currentUser = {
+   displayName: 'Roman Ryaboshtan',
+   image: userImage,
+};
+
 const renderNotificationItem = (item, index) => (
    <div className='notification-item' key={uuidv4()}>
       <i className={item.icon}></i>
       <span>{item.content}</span>
    </div>
+);    
+
+const renderUserToggle = (user) => (
+   <div className='topnav__right-user'>
+      <div className='topnav__right-user__image'>
+         <img src="{user.image" alt="" />
+      </div>
+      <div className="topnav__right-user__name">
+         {user.displayName}
+      </div>
+   </div>
 );
 
-const renderFooter = () => <Link to = '/'>View All</Link>
+const renderFooter = () => <Link to='/'>View All</Link>;
 
 const Topnav = () => {
    return (
@@ -29,8 +48,13 @@ const Topnav = () => {
                <Dropdown icon='bx bx-user'></Dropdown>
             </div>
             <div className='topnav__right-item'>
-                   <Dropdown icon='bx bx-bell' badge='12' contentData={notifications} renderItems={renderNotificationItem}
-                   renderFooter = {renderFooter}></Dropdown>
+               <Dropdown
+                  icon='bx bx-bell'
+                  badge='12'
+                  contentData={notifications}
+                  renderItems={renderNotificationItem}
+                  renderFooter={renderFooter}
+               ></Dropdown>
             </div>
             <div className='topnav__right-item'>
                <Dropdown></Dropdown>
