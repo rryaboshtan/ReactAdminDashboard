@@ -69,6 +69,7 @@
 
 .topnav__right-item .notification-item:hover {
   background-color: var(--second-color-light);
+  cursor: pointer;
 }
 
 .topnav__right-item .notification-item > i {

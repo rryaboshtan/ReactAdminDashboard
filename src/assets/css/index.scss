@@ -7,6 +7,7 @@
     --txt-white: #fff;
     --main-color: #349eff;
     --second-color: #62b4ff;
+    --second-color-light: #c6ced699;
     --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     --main-bg-light: #ffffff;
@@ -104,18 +105,18 @@ input:focus {
     height: calc(100% - 30px);
 }
 
-// .card__header {
-//     text-transform: capitalize;
-// }
+.card__header {
+    text-transform: capitalize;
+}
 
-// .card > div ~ div {
-//     margin-top: 30px;
-// }
+.card > div ~ div {
+    margin-top: 30px;
+}
 
-// .card__footer {
-//     text-align: center;
-//     text-transform: capitalize;
-// }
+.card__footer {
+    text-align: center;
+    text-transform: capitalize;
+}
 
 // .light-background {
 //     background-color: var(--main-bg-light);

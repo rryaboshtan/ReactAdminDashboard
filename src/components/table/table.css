@@ -1,0 +1,23 @@
+.table-wrapper {
+  overflow-y: auto;
+}
+
+.table-wrapper table {
+  width: 100%;
+  min-width: 400px;
+  border-spacing: 0;
+}
+
+.table-wrapper table thead {
+  background-color: var(--second-bg);
+}
+
+.table-wrapper table thead tr {
+  text-align: left;
+}
+
+.table-wrapper table th,
+.table-wrapper table td {
+  text-transform: capitalize;
+  padding: 15px 10px;
+}

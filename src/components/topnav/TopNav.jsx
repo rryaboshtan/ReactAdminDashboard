@@ -16,7 +16,7 @@ const currentUser = {
    image: userImage,
 };
 
-const renderNotificationItem = (item, index) => (
+const renderNotificationItem = item => (
    <div className='notification-item' key={uuidv4()}>
       <i className={item.icon}></i>
       <span>{item.content}</span>
