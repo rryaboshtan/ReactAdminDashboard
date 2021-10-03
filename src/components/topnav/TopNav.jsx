@@ -12,7 +12,7 @@ import userImage from '../../assets/images/MyPhoto.png';
 import userMenu from '../../assets/JsonData/user_menus.json';
 
 const currentUser = {
-   displayName: 'Roman Ryaboshtan',
+   displayName: 'Roman',
    image: userImage,
 };
 
@@ -32,6 +32,15 @@ const renderUserToggle = () => (
    </div>
 );
 
+const renderUserMenu = (item) => (
+   <Link to='/' key={uuidv4()}>
+      <div className='notification-item '>
+         <i className={item.icon}></i>
+         <span>{item.content}</span>
+      </div>
+   </Link>
+);
+
 const renderFooter = () => <Link to='/'>View All</Link>;
 
 const Topnav = () => {
@@ -44,7 +53,10 @@ const Topnav = () => {
          <div className='topnav__right'>
             <div className='topnav__right-item'>
                <Dropdown
+                  originClass={'origin-top'}
                   customToggle={renderUserToggle}
+                  contentData={userMenu}
+                  renderItems = {renderUserMenu}
                ></Dropdown>
             </div>
             <div className='topnav__right-item'>

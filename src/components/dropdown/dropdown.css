@@ -77,3 +77,9 @@
   padding: 20px;
   text-align: center;
 }
+
+.origin-top {
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
