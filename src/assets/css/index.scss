@@ -83,26 +83,26 @@ input:focus {
     border: 2px solid var(--main-color);
 }
 
-// .page-header {
-//     margin-bottom: 40px;
-//     text-transform: capitalize;
-// }
+.page-header {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
 
-// .card {
-//     padding: 30px;
-//     margin-bottom: 30px;
-//     background-color: var(--main-bg);
-//     box-shadow: var(--box-shadow);
-//     border-radius: var(--border-radius);
-// }
+.card {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
 
-// .full-height {
-//     height: 100%;
-// }
+.full-height {
+    height: 100%;
+}
 
-// .card.full-height {
-//     height: calc(100% - 30px);
-// }
+.card.full-height {
+    height: calc(100% - 30px);
+}
 
 // .card__header {
 //     text-transform: capitalize;

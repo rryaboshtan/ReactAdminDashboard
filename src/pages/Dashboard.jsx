@@ -22,6 +22,11 @@ const Dashboard = () => {
                   ))}
                </div>
             </div>
+            <div className="col-6">
+               <div className="card full-height">
+                  
+               </div>
+            </div>
          </div>
       </div>
    );
