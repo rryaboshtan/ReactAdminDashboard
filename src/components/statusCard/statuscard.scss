@@ -1,0 +1,17 @@
+.status-card {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color .5s ease;
+    margin-bottom: 30px;
+
+    &__icon {
+
+    }
+}

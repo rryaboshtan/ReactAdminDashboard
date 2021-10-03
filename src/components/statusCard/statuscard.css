@@ -1,0 +1,20 @@
+.status-card {
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--main-bg);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+  margin-bottom: 30px;
+}
