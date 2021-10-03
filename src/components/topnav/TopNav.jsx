@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 import './topnav.css';
@@ -14,6 +15,8 @@ const renderNotificationItem = (item, index) => (
    </div>
 );
 
+const renderFooter = () => <Link to = '/'>View All</Link>
+
 const Topnav = () => {
    return (
       <div className='topnav'>
@@ -23,10 +26,11 @@ const Topnav = () => {
          </div>
          <div className='topnav__right'>
             <div className='topnav__right-item'>
-               <Dropdown icon='ba bx-user'></Dropdown>
+               <Dropdown icon='bx bx-user'></Dropdown>
             </div>
             <div className='topnav__right-item'>
-               <Dropdown icon='bx bx-bell' badge='12' contentData={notifications} renderItems={renderNotificationItem}></Dropdown>
+                   <Dropdown icon='bx bx-bell' badge='12' contentData={notifications} renderItems={renderNotificationItem}
+                   renderFooter = {renderFooter}></Dropdown>
             </div>
             <div className='topnav__right-item'>
                <Dropdown></Dropdown>

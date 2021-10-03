@@ -36,8 +36,26 @@
         display: flex;
         align-items: center;
 
-        &-item ~ .topnav__right-item {
-            margin-left: 30px;
+        &-item {
+            & ~ .topnav__right-item {
+                margin-left: 30px;
+            }
+
+            .notification-item {
+                display: flex;
+                align-items: center;
+                padding: 20px;
+
+                &:hover {
+                    // background-color: var(--second-bg);
+                    background-color: var(--second-color-light) ;
+                }
+
+                & > i {
+                    margin-right: 20px;
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 }
