@@ -1,0 +1,34 @@
+.topnav {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--topnav-height);
+
+    &__search {
+        position: relative;
+        height: 50px;
+        background-color: var(--main-bg);
+        display: flex;
+        align-items: center;
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+        overflow: hidden;
+
+        & > input {
+            height: 100%;
+            width: 100%;
+            padding: 10px 60px 10px 20px;
+            font-size: 1rem;
+            border-radius: var(--border-radius);
+            color: var(--txt-color);
+            background-color: var(--main-bg);
+        }
+
+        & > i {
+            font-size: 1.5rem;
+            position: absolute;
+            right: 20px;
+        }
+    }
+}
