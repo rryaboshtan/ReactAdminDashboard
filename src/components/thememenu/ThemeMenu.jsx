@@ -76,7 +76,7 @@ const ThemeMenu = () => {
    const setColor = color => {
       setCurrColor(color.id);
       localStorage.setItem('colorMode', color.class);
-      dispatch(ThemeAction.setMode(color.class));
+      dispatch(ThemeAction.setColor(color.class));
    };
 
    useEffect(() => {
