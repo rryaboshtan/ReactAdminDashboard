@@ -5,10 +5,10 @@ const setMode = mode => {
    };
 };
 
-const setColor = mode => {
+const setColor = color => {
    return {
       type: 'SET_COLOR',
-      payload: mode,
+      payload: color,
    };
 };
 

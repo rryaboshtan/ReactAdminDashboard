@@ -1,20 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+import rootReducer from './redux/reducers';
+import Layout from './components/layout/layout';
 
 import './assets/boxicons-2.0.7/css/boxicons.min.css';
 import './assets/css/grid.css';
 import './assets/css/theme.css';
 import './assets/css/index.css';
 
-import Layout from './components/layout/layout';
+
+const store = createStore(rootReducer);
 
 document.title = 'My dashboard';
 
 ReactDOM.render(
-   <React.StrictMode>
-      <Layout />
-   </React.StrictMode>,
+   <Provider>
+      <React.StrictMode>
+         <Layout />
+      </React.StrictMode>
+   </Provider>,
    document.getElementById('root')
 );
 
