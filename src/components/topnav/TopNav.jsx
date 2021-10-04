@@ -5,11 +5,10 @@ import { v4 as uuidv4 } from 'uuid';
 import './topnav.css';
 
 import Dropdown from '../dropdown/Dropdown';
-
 import notifications from '../../assets/JsonData/notification.json';
-
 import userImage from '../../assets/images/MyPhoto.png';
 import userMenu from '../../assets/JsonData/user_menus.json';
+import ThemeMenu from '../thememenu/ThemeMenu';
 
 const currentUser = {
    displayName: 'Roman',
@@ -69,7 +68,7 @@ const Topnav = () => {
                ></Dropdown>
             </div>
             <div className='topnav__right-item'>
-               <Dropdown></Dropdown>
+               <ThemeMenu></ThemeMenu>
             </div>
          </div>
       </div>

@@ -1,0 +1,12 @@
+.theme-menu {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    z-index: 3;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    transition: right .5s var(--transition-cubic);
+}
