@@ -1,21 +1,19 @@
 ## Used technologies
     - SCSS
-    - 
     - React
     - uuid
     - Redux    
 ## [Demo version](https://rryaboshtan.github.io/FashionDemo2/)
 
 ### Screenshots
-![](assets/screenshots/screenshot1.png)
-![](assets/screenshots/screenshot2.png)
-![](assets/screenshots/screenshot3.png)
+![](screenshots/screenshot1.png)
+![](screenshots/screenshot2.png)
+![](screenshots/screenshot3.png)
 
- A Vanilla.js SPA for a presentation html murkuped slides.
 
  ## Getting started
     You must clone the repo:
-     https://github.com/rryaboshtan/PresentationTool.git
+     https://github.com/rryaboshtan/ReactAdminDashboard.git
 
     After that you must install http-server globally
      npm i -g http-server
