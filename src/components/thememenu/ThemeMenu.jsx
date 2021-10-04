@@ -1,9 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { useDispatch } from 'react-redux';
+
+import clickOutsideRef from '../../helpers/clickOutsideRef';
+import ThemeAction from '../../redux/actions/ThemeAction';
 
 import './thememenu.css';
-import clickOutsideRef from '../../helpers/clickOutsideRef';
-
 const modeSettings = [
    {
       id: 'light',
@@ -64,14 +66,17 @@ const ThemeMenu = () => {
 
    const [currMode, setCurrMode] = useState('light');
    const [currColor, setCurrColor] = useState('blue');
+   const dispatch = useDispatch();
 
    const setMode = mode => {
       setCurrMode(mode.id);
       localStorage.setItem('themeMode', mode.class);
+      dispatch(ThemeAction.setMode(mode.class));
    };
    const setColor = color => {
       setCurrColor(color.id);
       localStorage.setItem('colorMode', color.class);
+      dispatch(ThemeAction.setMode(color.class));
    };
 
    useEffect(() => {

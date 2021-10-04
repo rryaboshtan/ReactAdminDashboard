@@ -33,7 +33,7 @@ const Customers = () => {
                         limit='10'
                         headData={customerTableHead}
                         renderHead={renderHead}
-                        bodyData={customerList}
+                        bodyData={customerList ? customerList : []}
                         renderBody={renderBody}
                      />
                   </div>

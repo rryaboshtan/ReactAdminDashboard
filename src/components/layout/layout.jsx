@@ -19,6 +19,7 @@ const Layout = () => {
       const colorClass = localStorage.getItem('colorMode', 'theme-color-blue');
 
       dispatch(ThemeAction.setMode(themeClass));
+      dispatch(ThemeAction.setColor(colorClass));
    }, [dispatch]);
 
    return (

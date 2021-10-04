@@ -2,6 +2,7 @@ import React from 'react';
 import Chart from 'react-apexcharts';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import { useSelector } from 'react-redux';
 
 import Table from '../components/table/Table';
 import StatusCard from '../components/statusCard/StatusCard';
@@ -124,7 +125,7 @@ const orderStatus = {
 const renderOrderHead = item => <th key={uuidv4()}>{item}</th>;
 
 const renderOrderBody = item => (
-   <tr>
+   <tr key={uuidv4()}>
       <td>{item.id}</td>
       <td>{item.user}</td>
       <td>{item.price}</td>
@@ -146,6 +147,8 @@ const renderCustomerBody = item => (
 );
 
 const Dashboard = () => {
+   const themeReducer = useSelector(state => state.ThemeReducer);
+
    return (
       <div>
          <h2 className='page-header'>Dashboard</h2>
@@ -153,7 +156,7 @@ const Dashboard = () => {
             <div className='col-6'>
                <div className='row'>
                   {statusCards.map(item => (
-                     <div className='col-6'>
+                     <div key={uuidv4()} className='col-6'>
                         {item.title}
                         <StatusCard icon={item.icon} count={item.count} title={item.title} />
                      </div>
@@ -162,7 +165,9 @@ const Dashboard = () => {
             </div>
             <div className='col-6'>
                <div className='card full-height'>
-                  <Chart options={chartOptions.options} series={chartOptions.series} type='line' height='100%' />
+                  <Chart
+                     options={chartOptions.options}
+                     series={chartOptions.series} type='line' height='100%' />
                </div>
             </div>
          </div>

@@ -12,13 +12,12 @@ import './assets/css/grid.css';
 import './assets/css/theme.css';
 import './assets/css/index.css';
 
-
 const store = createStore(rootReducer);
 
 document.title = 'My dashboard';
 
 ReactDOM.render(
-   <Provider>
+   <Provider store={store}>
       <React.StrictMode>
          <Layout />
       </React.StrictMode>
