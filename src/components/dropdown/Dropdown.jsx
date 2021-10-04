@@ -2,18 +2,19 @@ import React from 'react';
 import { useRef } from 'react';
 
 import './dropdown.css';
+import clickOutsideRef from '../../helpers/clickOutsideRef';
 
-const clickOutsideRef = (content_ref, toggle_ref) => {
-   document.addEventListener('mousedown', e => {
-      if (toggle_ref.current && toggle_ref.current.contains(e.target)) {
-         content_ref.current.classList.toggle('active');
-      } else {
-         if (content_ref.current && !content_ref.current.contains(e.target)) {
-            content_ref.current.classList.remove('active');
-         }
-      }
-   });
-};
+// const clickOutsideRef = (content_ref, toggle_ref) => {
+//    document.addEventListener('mousedown', e => {
+//       if (toggle_ref.current && toggle_ref.current.contains(e.target)) {
+//          content_ref.current.classList.toggle('active');
+//       } else {
+//          if (content_ref.current && !content_ref.current.contains(e.target)) {
+//             content_ref.current.classList.remove('active');
+//          }
+//       }
+//    });
+// };
 
 const Dropdown = props => {
    const dropdown_toggle_el = useRef(null);
