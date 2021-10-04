@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Table from '../components/table/Table';
 import StatusCard from '../components/statusCard/StatusCard';
 import statusCards from '../assets/JsonData/status-card-data.json';
+import Badge from '../components/badge/Badge';
 
 const chartOptions = {
    series: [
@@ -129,7 +130,7 @@ const renderOrderBody = item => (
       <td>{item.price}</td>
       <td>{item.date}</td>
       <td>
-         <span>{item.status}</span>
+         <Badge type={orderStatus[item.status]} content={item.status} />
       </td>
    </tr>
 );
