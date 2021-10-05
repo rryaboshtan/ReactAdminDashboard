@@ -4,18 +4,6 @@ import { useRef } from 'react';
 import './dropdown.css';
 import clickOutsideRef from '../../helpers/clickOutsideRef';
 
-// const clickOutsideRef = (content_ref, toggle_ref) => {
-//    document.addEventListener('mousedown', e => {
-//       if (toggle_ref.current && toggle_ref.current.contains(e.target)) {
-//          content_ref.current.classList.toggle('active');
-//       } else {
-//          if (content_ref.current && !content_ref.current.contains(e.target)) {
-//             content_ref.current.classList.remove('active');
-//          }
-//       }
-//    });
-// };
-
 const Dropdown = props => {
    const dropdown_toggle_el = useRef(null);
    const dropdown_content_el = useRef(null);
@@ -30,6 +18,7 @@ const Dropdown = props => {
             {props.customToggle ? props.customToggle() : ''}
          </button>
 
+         {/* props.originClass is the .origin-top in dropdown.css */}
          <div ref={dropdown_content_el} className={`dropdown__content ${props.originClass}`}>
             {props.contentData && props.renderItems ? props.contentData.map(item => props.renderItems(item)) : ''}
             {props.renderFooter ? <div className='dropdown__footer'>{props.renderFooter()}</div> : ''}
