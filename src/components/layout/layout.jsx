@@ -23,7 +23,8 @@ const Layout = () => {
    }, [dispatch]);
 
    return (
-      <BrowserRouter basename='/ReactAdminDashboard/'>
+      // basename='/ReactAdminDashboard/'
+      <BrowserRouter>
          <Route
             render={props => (
                <div className={`layout ${ThemeReducer.mode} ${ThemeReducer.color}`}>
