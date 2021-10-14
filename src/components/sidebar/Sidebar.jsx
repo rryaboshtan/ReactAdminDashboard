@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 import './sidebar.css';
 
@@ -34,7 +35,7 @@ const Sidebar = props => {
             <img src={logo} alt='company logo' />
          </div>
          {sidebar_items.map((item, index) => (
-            <Link to={item.route} key={index}>
+            <Link to={item.route} key={uuidv4()}>
                {/* <div>{item.display_name}</div> */}
                <SidebarItem title={item.display_name} icon={item.icon} active={index === activeItem}></SidebarItem>
             </Link>
