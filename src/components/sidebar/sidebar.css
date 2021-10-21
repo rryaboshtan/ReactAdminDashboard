@@ -1,0 +1,67 @@
+.sidebar {
+  min-width: var(--sidebar-width);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--main-bg);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.sidebar__logo {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar__logo > img {
+  height: 100px;
+}
+
+.sidebar__item {
+  padding: 0 20px;
+}
+
+.sidebar__item-inner {
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.sidebar__item-inner > i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.sidebar__item-inner > span {
+  text-transform: capitalize;
+}
+
+.sidebar__item-inner:hover {
+  color: var(--main-color);
+}
+
+.sidebar__item-inner.active {
+  border-radius: var(--border-radius);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--main-color)), to(var(--second-color)));
+  background-image: -webkit-linear-gradient(left, var(--main-color), var(--second-color));
+  background-image: -o-linear-gradient(left, var(--main-color), var(--second-color));
+  background-image: linear-gradient(to right, var(--main-color), var(--second-color));
+  color: var(--txt-white);
+}
