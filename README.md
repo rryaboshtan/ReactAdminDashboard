@@ -12,7 +12,7 @@
 
 ## React Admin Dashboard with Multiple Themes
 
- ## Getting started
+ ## Installation instruction
     You must clone the repo:
      git clone https://github.com/rryaboshtan/ReactAdminDashboard.git
 
