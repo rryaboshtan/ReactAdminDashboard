@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ReactAdminDashboard/static/css/main.8efb63fb.chunk.css",
+    "main.js": "/ReactAdminDashboard/static/js/main.f49ce076.chunk.js",
+    "main.js.map": "/ReactAdminDashboard/static/js/main.f49ce076.chunk.js.map",
+    "runtime-main.js": "/ReactAdminDashboard/static/js/runtime-main.3a4d4e2f.js",
+    "runtime-main.js.map": "/ReactAdminDashboard/static/js/runtime-main.3a4d4e2f.js.map",
+    "static/js/2.db4aaa7a.chunk.js": "/ReactAdminDashboard/static/js/2.db4aaa7a.chunk.js",
+    "static/js/2.db4aaa7a.chunk.js.map": "/ReactAdminDashboard/static/js/2.db4aaa7a.chunk.js.map",
+    "static/js/3.fad1721f.chunk.js": "/ReactAdminDashboard/static/js/3.fad1721f.chunk.js",
+    "static/js/3.fad1721f.chunk.js.map": "/ReactAdminDashboard/static/js/3.fad1721f.chunk.js.map",
+    "index.html": "/ReactAdminDashboard/index.html",
+    "static/css/main.8efb63fb.chunk.css.map": "/ReactAdminDashboard/static/css/main.8efb63fb.chunk.css.map",
+    "static/js/2.db4aaa7a.chunk.js.LICENSE.txt": "/ReactAdminDashboard/static/js/2.db4aaa7a.chunk.js.LICENSE.txt",
+    "static/media/MyPhoto.40535e0b.png": "/ReactAdminDashboard/static/media/MyPhoto.40535e0b.png",
+    "static/media/boxicons.min.css": "/ReactAdminDashboard/static/media/boxicons.cbd149c5.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a4d4e2f.js",
+    "static/js/2.db4aaa7a.chunk.js",
+    "static/css/main.8efb63fb.chunk.css",
+    "static/js/main.f49ce076.chunk.js"
+  ]
+}
